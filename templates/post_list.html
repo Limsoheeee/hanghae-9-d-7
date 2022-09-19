@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arsenal Fan Site</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#headers").load("layout/header.html");
+            $("#footers").load("layout/footer.html");
+            $(".loginWrap").load("login.html");
+
+        });
+    </script>
+</head>
+
+<body>
+    <div id="headers"></div>
+
+    <div class="postWrap">
+        <div class="btnWrap">
+            <button type="button"><a href="post_write.html">글 쓰기 +</a></button>
+            <input type="text" id="search" class="search" placeholder="제목을 검색해 주세요">
+            <button id="searchBtn">검색 &#128269;</button>
+        </div>
+        <div class="post_list">
+            <ul class="list">
+                <li id="post">
+                    <a href="post_view.html">
+                        <p>게시글 번호?</p>
+                        <div id="image">이미지<img src="" alt=""></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p></p>
+                        <div>이미지<img src="" alt=""></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p></p>
+                        <div>이미지<img src="" alt=""></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p></p>
+                        <div>이미지<img src="" alt=""></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="footers"></div>
+</body>
+
+</html>
